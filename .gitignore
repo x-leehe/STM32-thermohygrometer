@@ -7,7 +7,7 @@
 # project out
 /build
 /bin
-/obj
+/OBJ
 /out
 
 # eide template

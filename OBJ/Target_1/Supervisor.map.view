@@ -1,6 +1,0 @@
-tool: GCC
-fileName: 'Supervisor.map'
-elfName: 'Supervisor.elf'
-compilerName: 'Arch Repository'
-compilerFullName: 'arm-none-eabi-gcc (Arch Repository) 16.1.0'
-compilerPath: '/usr/bin/arm-none-eabi-gcc'
