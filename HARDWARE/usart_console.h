@@ -1,0 +1,15 @@
+#ifndef __USART_CONSOLE_H
+#define __USART_CONSOLE_H
+
+#include "stm32f10x.h"
+
+//////////////////////////////////////////////////////////////////////////////////
+// USART1 串口控制台
+// 引脚: PA9(TX), PA10(RX) — 板载 USB 转串口
+// 波特率: 115200 8-N-1
+// 重定向 printf 到 USART1，实现 _write_r 系统调用
+//////////////////////////////////////////////////////////////////////////////////
+
+void USART_Console_Init(void);
+
+#endif /* __USART_CONSOLE_H */

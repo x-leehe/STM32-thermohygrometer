@@ -1,0 +1,43 @@
+-mcpu=cortex-m3 -mthumb -T /home/admin/Devel/Embed/Supervisor/STM32F103RCTX_FLASH.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nano.specs --specs=nosys.specs
+-Wl,-Map=./OBJ/Target_1/Supervisor.map
+-o ./OBJ/Target_1/Supervisor.elf ./OBJ/Target_1/.obj/CORE/core_cm3.o
+./OBJ/Target_1/.obj/CORE/startup_stm32f10x_hd.o
+./OBJ/Target_1/.obj/HARDWARE/BEEP.o
+./OBJ/Target_1/.obj/HARDWARE/DHT11.o
+./OBJ/Target_1/.obj/HARDWARE/GPIO.o
+./OBJ/Target_1/.obj/HARDWARE/LED.o
+./OBJ/Target_1/.obj/HARDWARE/alarm.o
+./OBJ/Target_1/.obj/HARDWARE/bsp_spi_flash.o
+./OBJ/Target_1/.obj/HARDWARE/data_logger.o
+./OBJ/Target_1/.obj/HARDWARE/serial_cmd.o
+./OBJ/Target_1/.obj/HARDWARE/thermohygrometer.o
+./OBJ/Target_1/.obj/HARDWARE/usart_console.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/misc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_adc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_bkp.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_can.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_cec.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_crc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_dac.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_dbgmcu.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_dma.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_exti.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_flash.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_fsmc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_gpio.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_i2c.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_iwdg.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_pwr.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_rcc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_rtc.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_sdio.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_spi.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_tim.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_usart.o
+./OBJ/Target_1/.obj/STM32F103x_FWLIB/src/stm32f10x_wwdg.o
+./OBJ/Target_1/.obj/SYSTEM/delay/delay.o
+./OBJ/Target_1/.obj/USER/font/fonts.o
+./OBJ/Target_1/.obj/USER/lcd/bsp_ili9341_lcd.o
+./OBJ/Target_1/.obj/USER/main.o
+./OBJ/Target_1/.obj/USER/stm32f10x_it.o
+./OBJ/Target_1/.obj/USER/system_stm32f10x.o -lm
